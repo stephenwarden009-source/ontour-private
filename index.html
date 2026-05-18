@@ -1342,9 +1342,6 @@ body.mode-industry [data-mode-section="industry"],body.mode-fan [data-mode-secti
   Real signals. Market pressure reads. Live alerts and second chances: added dates, better markets, travel options, returned-ticket windows, and legitimate access paths.
 </div>
 
-<div class="fan-mission-copy" style="margin-top:10px;font-size:11px;line-height:1.55;color:var(--text3);">
-  Signals are expanding in real time. Early access means seeing opportunities before everyone else does.
-</div>
 
 <div class="fan-mission-copy" style="margin-top:12px;">
   <strong>Not a ticketing platform.</strong><br>
@@ -1379,7 +1376,37 @@ body.mode-industry [data-mode-section="industry"],body.mode-fan [data-mode-secti
     </div>
   </div>
 
-  <div class="m-bod" style="font-weight:800;margin:12px 18px 4px;color:var(--text);">Follow tours and related artists to track demand, added dates, new ticket opportunities, and closely connected shows. Text alerts are strictly opt-in.</div>
+  <!-- NEED TO KNOW -->
+  <style>
+    .ntk-section{margin:14px 0 4px;}
+    .ntk-card{background:var(--bg);border:.5px solid var(--border2);border-radius:14px;overflow:hidden;margin:8px 14px 4px;}
+    .ntk-img img{width:100%;height:160px;object-fit:cover;display:block;}
+    .ntk-body{padding:12px 14px 14px;}
+    .ntk-kicker{font-size:10px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);margin-bottom:4px;}
+    .ntk-title{font-family:var(--serif);font-size:17px;font-weight:700;line-height:1.25;color:var(--text);margin-bottom:7px;}
+    .ntk-copy{font-size:12px;line-height:1.6;color:var(--text2);margin-bottom:10px;}
+    .ntk-links{display:flex;flex-direction:column;gap:6px;}
+    .ntk-link{font-size:11px;font-weight:700;color:var(--green);text-decoration:none;padding:7px 10px;background:var(--green2);border:.5px solid var(--greenb);border-radius:8px;display:block;}
+  </style>
+  <div class="ntk-section">
+    <div class="sec-hdr"><span class="sec-lbl">Need to Know</span></div>
+    <div class="ntk-card">
+      <div class="ntk-img">
+        <img src="https://www.hollywoodreporter.com/wp-content/uploads/2025/10/KPop_Demon_Hunters_u_01_04_59_06-H-2025.jpg?w=800&h=450&crop=1" alt="KPop Demon Hunters" onerror="this.onerror=null;this.style.display='none';this.parentElement.style.display='none';">
+      </div>
+      <div class="ntk-body">
+        <div class="ntk-kicker">🚩 Under scrutiny · May 2026</div>
+        <div class="ntk-title">Netflix's KPop Demon Hunters tour is raising red flags for fans</div>
+        <div class="ntk-copy">Netflix and AEG Presents announced a global concert tour for the two-time Oscar-winning film — but with no dates, no cities, no confirmed performing artists, and no on-sale timeline. Just a waitlist. Hardcore fans are flagging the lack of specifics as unusual for a legitimate major tour at this stage.</div>
+        <div class="ntk-links">
+          <a class="ntk-link" href="https://www.forbes.com/sites/paultassi/2026/05/15/something-feels-off-about-the-kpop-demon-hunters-global-concert-tour/" target="_blank" rel="noopener">Forbes — Something feels off about this tour →</a>
+          <a class="ntk-link" href="https://www.hollywoodreporter.com/music/film-tv-music-news/kpop-demon-hunters-netflix-aeg-global-concert-tour-1236595086/" target="_blank" rel="noopener">Hollywood Reporter — Official announcement →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="m-bod" style="font-weight:800;margin:12px 18px 4px;color:var(--text);">Follow tours and related artists to track demand, added dates, new ticket opportunities, and closely connected shows.</div>
   <div class="m-bod" style="font-size:10px;color:var(--text3);margin:0 18px 10px;line-height:1.35;">Tour Ticket Intelligence™</div>
 
   <div class="alert-status" id="alertStatusCard"><div class="ct">Alerts are on</div><div class="cb" id="alertStatusText"><span class="brand-inline"><span class="wm-on">on</span><span class="wm-tour">Tour</span></span> is watching followed tours and artists.</div><div class="alerts-actions" style="margin-top:8px"><button class="abt-btn" onclick="openAlertsModal()">Edit alerts</button></div></div>
@@ -1427,6 +1454,7 @@ body.mode-industry [data-mode-section="industry"],body.mode-fan [data-mode-secti
       </div>
     </div>
     <button class="opp-btn" onclick="openOpportunityTour('bruno-2026')">View Bruno related artists/shows</button>
+    <button class="opp-btn" style="margin-top:8px;" onclick="openOpportunityTour('styles-2026')">View Harry Styles related artists/shows</button>
   </div>
 
   <div class="protect-rail">
@@ -1566,7 +1594,7 @@ body.mode-industry [data-mode-section="industry"],body.mode-fan [data-mode-secti
       <strong>onTour shows fans where they actually have a shot at tickets — and what to do next.</strong>
     </p>
     <p class="abt-b">
-      It reads the live ticket market, filters noise, and turns official signals into clear, actionable intelligence — free, before the queue opens.
+      It reads the live ticket market, filters noise, and turns official signals into clear, actionable intelligence — free, before the on-sale opens and throughout the entire tour cycle.
     </p>
   </div>
 
@@ -1574,35 +1602,35 @@ body.mode-industry [data-mode-section="industry"],body.mode-fan [data-mode-secti
 
 <h3 class="abt-h">What onTour does</h3>
 
-<p class="abt-b">For any high-demand tour, onTour gives fans a real read before the on-sale opens:</p>
+<p class="abt-b">For any high-demand tour, onTour gives fans a real read — before the on-sale opens and all the way through:</p>
 
 <div class="abt-process">
   <div class="abt-step">
     <div class="abt-step-num">1</div>
     <div>
       <div class="abt-step-title">Market pressure map</div>
-      <div class="abt-step-copy">See which cities are oversubscribed and which markets give you a real shot — before you commit to one.</div>
+      <div class="abt-step-copy">See which cities are oversubscribed and which markets give you a real shot — before you commit to one. Demand ratios, venue capacity, and supply signals in plain language.</div>
     </div>
   </div>
   <div class="abt-step">
     <div class="abt-step-num">2</div>
     <div>
       <div class="abt-step-title">Access paths</div>
-      <div class="abt-step-copy">Presales, verified fan windows, travel markets, added shows, and returned ticket windows — all mapped out.</div>
+      <div class="abt-step-copy">Presales, verified fan windows, travel markets, added shows, and returned ticket windows — all mapped and ranked so you know your actual options, not just the loudest queue.</div>
     </div>
   </div>
   <div class="abt-step">
     <div class="abt-step-num">3</div>
     <div>
-      <div class="abt-step-title">Live official signals</div>
-      <div class="abt-step-copy">onTour monitors official sources for new dates, capacity changes, and onsale updates — filtering noise from fan speculation.</div>
+      <div class="abt-step-title">Live signals + specific alerts</div>
+      <div class="abt-step-copy">onTour checks official ticket sources every 20 minutes. When something changes — a new date, a presale confirmed, a status shift — you get a push notification with the specific change, not a generic update. Open the app from the alert and you land directly on what moved.</div>
     </div>
   </div>
   <div class="abt-step">
     <div class="abt-step-num">4</div>
     <div>
       <div class="abt-step-title">After a miss</div>
-      <div class="abt-step-copy">Added shows, returned tickets, resale patterns, and connected ecosystem opportunities — tracked through the full tour lifecycle.</div>
+      <div class="abt-step-copy">Added shows, returned tickets, resale patterns, and connected ecosystem opportunities — tracked throughout the tour cycle. A miss on night one is not the end of the road.</div>
     </div>
   </div>
 </div>
@@ -1616,11 +1644,13 @@ body.mode-industry [data-mode-section="industry"],body.mode-fan [data-mode-secti
 </p>
 
 <p class="abt-b">
-  Save your home market and travel range — onTour personalizes every brief to your situation, surfacing the dates, cities, and access paths that match where you are and how far you'll go.
-</p>
+  Set your home city and how far you're willing to travel. onTour surfaces the dates, markets, and access paths most relevant to your situation — not a generic list built for everyone.</p>
+
+<p class="abt-b">
+  Enable alerts and onTour watches every tour you follow. When something material changes, you get a specific notification — and when you open the app from that alert, you land directly on what changed and when.</p>
 
 <div class="abt-note">
-  <strong>The goal:</strong> give fans a clear plan they can act on — before the queue, not during it.
+  <strong>The goal:</strong> give fans a clear, honest plan they can act on — before the queue, not during it.
 </div>
 
 <div class="abt-div"></div>
@@ -1628,10 +1658,10 @@ body.mode-industry [data-mode-section="industry"],body.mode-fan [data-mode-secti
 <h3 class="abt-h">What onTour is not</h3>
 
 <p class="abt-b">
-  onTour does not sell tickets. It does not re-sell tickets.
+  onTour does not sell tickets. It does not resell tickets. It has no financial relationship with any ticketing platform.
 </p>
 <p class="abt-b">
-  It is a free, independent intelligence layer — built for fans.
+  It is a free, independent intelligence layer — built entirely for fans.
 </p>
 
 <div class="abt-div"></div>
@@ -1639,10 +1669,9 @@ body.mode-industry [data-mode-section="industry"],body.mode-fan [data-mode-secti
 <h3 class="abt-h">Why this matters</h3>
 
 <p class="abt-b">
-  Getting tickets to a superstar tour is genuinely hard - and frustrating. The math is brutal — demand regularly runs 10:1, 20:1, even 144:1 against available supply.
-</p>
+  Getting tickets to a superstar tour is genuinely hard. The math is brutal — demand regularly runs 10:1, 20:1, even higher against available seats at peak markets.</p>
 <p class="abt-b">
-  That scarcity is real. But most fans enter the on-sale with no read on the pressure, no map of their real options, and no plan for after.
+  That scarcity is real and no app changes it. But most fans enter the on-sale with no read on the pressure, no map of their actual options, and no plan for what to do if they miss the first wave. onTour fixes that.
 </p>
 
 <div class="abt-note">
@@ -2017,7 +2046,6 @@ function tourCardHTML(t){
         <div class="card-signal-line">${escapeHTML(cardSignal.title)}<span>${escapeHTML(cardSignal.copy)}</span></div>
         <div class="tour-card-actions compact-actions">
           <button class="abt-btn primary-action" onclick="event.stopPropagation(); openTourSignal('${t.id}')">Latest Signal</button>
-          <button class="abt-btn alert-action" onclick="event.stopPropagation(); openAlertsModal('${t.id}')">Get Alerts</button>
         </div>
         <button class="card-secondary-link" onclick="event.stopPropagation(); openTour('${t.id}')">Tour brief + details</button>
         <div id="followStatus-${t.id}" class="follow-note"></div>
